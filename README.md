@@ -1,4 +1,10 @@
 # k8s-talos
+
+cluster-config.sh creates a 3 node talos cluster.
+
+
+
+
 A single node k8s cluster running on a Talos Linux
 
 ## Basic Configuration
