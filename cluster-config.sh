@@ -29,7 +29,7 @@ talosctl bootstrap --nodes $CONTROL_PLANE_IP --talosconfig=./talosconfig
 ## Patch Pod Security for Open-telemetry
 for ip in "${WORKER_IP[@]}"; do
     echo "Patching worker node: $ip"
-    talosctl patch mc --patch @podsecurity_patch.yaml -n $ip
+    talosctl patch mc --patch @./patches/podsecurity_patch.yaml -n $ip
 done
 
 
